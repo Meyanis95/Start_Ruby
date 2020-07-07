@@ -1,9 +1,12 @@
 mails = []
-
+i = 0
 50.times do
-    val = rand(50).to_s
-    mails.append("jean.dupont."+val+"@hotmail.fr")
-end
+    mails.append("jean.dupont."+i.to_s+"@email.fr")
+    i = i + 1
+    end 
 
-mails.sort{ |val.to_i| val.to_i % 2 <=> 0}
-puts mails
+if i % 2 == 0
+    puts mails
+end 
+
+#mails.sort {val.to_i % 2 <=> 0}
